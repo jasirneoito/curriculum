@@ -12,6 +12,7 @@ function MyApp({ Component, pageProps }) {
     <UserState>
       <Head>
         <meta property="og:site_name" content="nullcast" />
+        <meta name="google-site-verification" content="i7GH2ZiL_DBRxCi09A91mRT6EfWvMC-hrsL12WBCjqU" />
         <meta
           property="article:publisher"
           content="https://www.facebook.com/nullcast"
