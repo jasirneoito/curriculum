@@ -2,12 +2,12 @@ import styles from "./AuthorDetails.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Details({ username, avatar }) {
+export default function Details({ user_name, avatar }) {
   return (
     <>
       <div className={styles.authorDetails}>
         <div className={styles.authorDetails__icon}>
-          <Link href={`/u/${username}`}>
+          <Link href={`/u/${user_name}`}>
             <a>
               <img
                 src={avatar ? avatar : "/images/svgs/avatar.svg"}
@@ -35,8 +35,8 @@ export default function Details({ username, avatar }) {
         </div>
         <div className={styles.authorDetails__text}>
           <h4 className={styles.authorDetails__title}>
-            <Link href={`/u/${username}`}>
-              <a>{username}</a>
+            <Link href={`/u/${user_name}`}>
+              <a>{user_name}</a>
             </Link>
           </h4>
           <div className="flex items-center">
