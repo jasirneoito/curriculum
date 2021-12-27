@@ -61,7 +61,7 @@ export default function ProfileDetails({ userData, userCurrentLogin }) {
               </div>
             </div>
             {/* description */}
-            <div className="mt-3 text-sm">{userData.bio}</div>
+            <div className="mt-3 text-sm overflow-y-auto h-20">{userData.bio}</div>
           </div>
         </div>
         <Trails />
